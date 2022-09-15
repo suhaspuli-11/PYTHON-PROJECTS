@@ -1,7 +1,7 @@
 import random
 
 num = int(input("Enter a number between 0 and 9: "))
-lo,hi=0,9
+lo,hi,total = 0,9,0
 while(True):
     guess = random.randint(lo,hi)
     print(guess)
@@ -13,4 +13,6 @@ while(True):
     else:
         lo=guess+1
         print("Guess higher")
+    total += 1
 print("Right on!")
+print(f"You only took {total} number of guesses!")
