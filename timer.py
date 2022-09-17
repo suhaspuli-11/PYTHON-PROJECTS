@@ -9,7 +9,7 @@ def countdown(t):
         print(timer, end="\r")
         time.sleep(1)
         t -= 1
+    print('It\'s time!')
 
-print('Lift off!')
-t = input("Enter the time in seconds: ")
-countdown(int(t))
+t = int(input("Enter the time in seconds: "))
+countdown(t)
